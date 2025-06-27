@@ -206,7 +206,8 @@ def main(cfg):
             for i, batch in enumerate(tqdm(dataset)):
                 mut_pdb, mutations = batch
                 if 'Rosetta' in name:
-                    pred = match_rosetta_pred(mut_pdb, mutations, model, rosetta_dataset)
+                    raise NotImplementedError("Rosetta metrics are not implemented in this script.")
+                    # pred = match_rosetta_pred(mut_pdb, mutations, model, rosetta_dataset) ## rosetta_dataset was not defined, so i commented this line out
                 else:
                     pred = match_RaSP_pred(mut_pdb, mutations, model)
 
