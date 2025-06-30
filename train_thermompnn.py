@@ -12,8 +12,8 @@ from pytorch_lightning.loggers import WandbLogger
 from torchmetrics import MeanSquaredError, R2Score, SpearmanCorrCoef, PearsonCorrCoef
 from omegaconf import OmegaConf
 
-from transfer_model import TransferModel
-from datasets import FireProtDataset, MegaScaleDataset, ComboDataset
+from .transfer_model import TransferModel
+from .datasets_thermompnn import FireProtDataset, MegaScaleDataset, ComboDataset
 
 
 def get_metrics():

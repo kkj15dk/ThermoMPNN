@@ -6,9 +6,7 @@ from torchmetrics import MeanSquaredError, R2Score, SpearmanCorrCoef, PearsonCor
 from omegaconf import OmegaConf
 from Bio import pairwise2
 
-import sys
-sys.path.append('../')
-from datasets import seq1_index_to_seq2_index, FireProtDataset, MegaScaleDataset, ddgBenchDataset
+from ..datasets_thermompnn import seq1_index_to_seq2_index, FireProtDataset, MegaScaleDataset, ddgBenchDataset
 
 alphabet = 'ACDEFGHIKLMNPQRSTVWYX'
 

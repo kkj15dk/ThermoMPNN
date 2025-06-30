@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
-from protein_mpnn_utils import ProteinMPNN, tied_featurize
-from model_utils import featurize
+from .protein_mpnn_utils import ProteinMPNN, tied_featurize
+from .model_utils import featurize
 import os
 
 

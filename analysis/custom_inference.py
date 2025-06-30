@@ -6,13 +6,11 @@ import torch.nn as nn
 from omegaconf import OmegaConf
 from Bio.PDB import PDBParser
 
-import sys
-sys.path.append('../')
-from datasets import Mutation
-from train_thermompnn import TransferModelPL
-from protein_mpnn_utils import tied_featurize, alt_parse_PDB
-from thermompnn_benchmarking import get_trained_model
-from SSM import get_ssm_mutations
+from ..datasets_thermompnn import Mutation
+from ..train_thermompnn import TransferModelPL
+from ..protein_mpnn_utils import tied_featurize, alt_parse_PDB
+from .thermompnn_benchmarking import get_trained_model
+from .SSM import get_ssm_mutations
 
 
 ALPHABET = 'ACDEFGHIKLMNPQRSTVWYX'

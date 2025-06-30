@@ -2,15 +2,13 @@ import pandas as pd
 from tqdm import tqdm
 import torch
 from omegaconf import OmegaConf
-
 import os
-import sys
-sys.path.append('../')
-from datasets import MegaScaleDataset, ddgBenchDataset, FireProtDataset, Mutation
-from protein_mpnn_utils import loss_smoothed, tied_featurize
-from train_thermompnn import TransferModelPL
-from model_utils import featurize
-from thermompnn_benchmarking import compute_centrality, ProteinMPNNBaseline, get_trained_model, ALPHABET
+
+from ..datasets_thermompnn import MegaScaleDataset, ddgBenchDataset, FireProtDataset, Mutation
+from ..protein_mpnn_utils import loss_smoothed, tied_featurize
+from ..train_thermompnn import TransferModelPL
+from ..model_utils import featurize
+from .thermompnn_benchmarking import compute_centrality, ProteinMPNNBaseline, get_trained_model, ALPHABET
 
 
 def get_ssm_mutations(pdb):
