@@ -1,13 +1,10 @@
-import sys
-sys.path.append('../')
-
 import numpy as np
 import os
 import pandas as pd
 from tqdm import tqdm
 from Bio import pairwise2
 
-from protein_mpnn_utils import parse_PDB
+from ..protein_mpnn_utils import parse_PDB
 
 
 def load_csv_data(csv_loc):
